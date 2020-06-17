@@ -13,14 +13,14 @@ class ColorPickerForm extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  componentDidMount() {
+  componentDidMount() { 
     ValidatorForm.addValidationRule("isColorNameUnique", (value) =>
-      this.props.colors.every(
+    this.props.colors.every(
         ({ name }) => name.toLowerCase() !== value.toLowerCase()
       )
     );
     ValidatorForm.addValidationRule("isColorUnique", (value) =>
-      this.props.colors.every(({ color }) => color !== this.state.currentColor)
+    this.props.colors.every(({ color }) => color !== this.state.currentColor)
     );
   }
   updateCurrentColor(newColor) {
@@ -32,6 +32,7 @@ class ColorPickerForm extends Component {
     });
   }
   handleSubmit() {
+    
     const newColor = {
       color: this.state.currentColor,
       name: this.state.newColorName,
