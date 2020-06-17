@@ -88,6 +88,7 @@ class NewPaletteForm extends Component {
     const { classes, maxColors, palettes } = this.props;
     const { open, colors } = this.state;
     const paletteIsFull = colors.length >= maxColors;
+    console.log(colors)
 
     return (
       <div className={classes.root}>
@@ -149,7 +150,7 @@ class NewPaletteForm extends Component {
         >
           <div className={classes.drawerHeader} />
           <DraggableColorList
-            colors={colors}
+            colors={colors.colors}
             removeColor={this.removeColor}
             axis="xy"
             onSortEnd={this.onSortEnd}
