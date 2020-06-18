@@ -58,7 +58,7 @@ class PaletteList extends Component {
                 <MiniPalette
                   {...palette}
                   goToPalette={this.goToPalette}
-                  openDialog={this.props.openDialog}
+                  openDialog={this.openDialog}
                   id={palette.id}
                 />
               </CSSTransition>
