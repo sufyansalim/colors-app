@@ -1,8 +1,6 @@
 # The Color App
 
->A cross between flatuicolors and materialuicolors. Users can copy colors from palettes and create new color
-palettes, can also make colors lighter and darker by using the slider. When creating palettes one can also 
-drag colors around and sort them however they like. 
+>A cross between flatuicolors and materialuicolors.
 
 ![COLOR](colorapp.png)
 
